@@ -1,0 +1,17 @@
+.modal__parent{
+    display: none;
+    @include mq(){
+        display: block;
+    }
+}
+
+.modal__child{
+    @include mq() {
+        display: none;
+    }
+}
+
+.modal{
+    z-index: 3;
+    display: none;
+}

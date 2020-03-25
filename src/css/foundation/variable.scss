@@ -1,0 +1,64 @@
+//サイト幅
+$site-width: 1110px;
+
+$space_s: 5px;
+$space_m: 10px;
+$space_l: 20px;
+$space_xl: 30px;
+$space_xxl: 40px;
+$space_3l: 50px;
+$space_4l: 60px;
+$space_5l: 80px;//キャリー作成分
+
+
+$font-size_s: 12px;
+$font-size_default: 16px;//本文
+$font-size_l: 20px;
+$font-size_xl: 24px;
+$font-size_xxl: 28px;
+$font-size_3l: 32px;//タイトル
+$font-size_4l: 36px;
+
+$line-height: 1.5;
+
+//メイン
+$main-color: #13C8EB;//水色
+//ベース
+$base-color: #F9FBFC;//白水色
+//サブ
+$sub-color: #A0E4F1;//水色
+
+$sub-color-opacity: rgba($sub-color, 0.3);
+
+
+//無彩色（白黒グレー）
+$non-color-gray: #404040;//文字
+$non-color-ligthgray: #ECECEC;//外枠
+$non-color-white-0: #FFFFFF;//白
+$non-color-white-1: #ECEBEB;//form
+
+//アクセント
+$accent-color_badge: #EF576C;//ピンク
+$accent_color_font: #7EA6F4;//水色
+$accent-color_title: #17B0CE;//青
+$accent-color_link: #4649DB;//紫
+$accent-color_btn: #FFEE7D;//黄色
+$accent-color_err: #F80606;//赤
+$accent-color_bord: #86E893;//黄緑
+$accent-color_default: #404040; //黒
+$accent-color_sub:#3395A8;//ダーク水色
+
+
+//レスポンシブは一旦手をつけていません！
+$breakpoints: ('sp': 'screen and (max-width: 768px)',
+    'tab': 'screen and (min-width: 768px)',
+	'pc': 'screen and (min-width: 1000px)'
+) !default;
+
+
+@mixin mq($breakpoint: pc) {
+	@media #{map-get($breakpoints, $breakpoint)} {
+		@content;
+	}
+}
+

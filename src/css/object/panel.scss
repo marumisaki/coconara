@@ -1,0 +1,49 @@
+/*パネル*/
+.panel{
+	padding: $space_xl;
+	box-sizing: border-box;
+	&--blue{//青（ログインなど）
+		@extend .panel;
+		background: $main-color;
+	}
+	&--entry{//ログイン、新規登録画面など
+		margin: 100px auto 130px auto;
+	}
+	&--white{//白
+		background: $non-color-white-0;
+		border: 1px solid $non-color-ligthgray;
+		box-shadow: 2px 2px 4px $non-color-ligthgray;
+	}
+	&--lightblue{//水色
+		@extend .panel;
+		background: $sub-color;
+		&--side{
+			height: 630px;
+		}
+	}
+	&--sub{
+		background: $sub-color-opacity;
+	}
+
+	&--oblong{//画面上にある横長のタイトル
+		background: $main-color;
+		width: 100%;
+		height: $space_xxl*2;
+		color: $non-color-white-0;
+		border-radius: $space_s;
+		display: table;
+		&__title{//画面上にある横長のタイトル文字上下中央
+			display: table-cell;
+			vertical-align: middle;
+			font-size: $font-size_xxl;
+		}
+	}
+	&--2{
+		width: calc((100% - #{$space_xl}) / 2);
+	}
+
+	&--green{
+		background: $accent-color_bord;
+
+	}
+}

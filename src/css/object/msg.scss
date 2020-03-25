@@ -1,0 +1,104 @@
+.msg{
+  border-radius: $space_m;
+  position: relative;
+  padding: $space_l $space_xl;
+  width: 550px;
+  &--right{
+    margin-right: $space_l;
+    background: $accent-color_bord;
+
+    &::before {
+			content: '';
+			position: absolute;
+			bottom: $space_m;
+			right: -$space_l*2;
+			border: $space_l solid transparent;
+
+			border-left: $space_l solid $accent-color_bord;
+
+		}
+
+		&::after {
+			content: '';
+			position: absolute;
+			bottom: $space_l + $space_s;
+			right: -$space_3l;
+			border: $space_m+$space_s solid transparent;
+      border-right: 0;
+			border-left: $space_3l solid #E2F7FB;
+		}
+	}
+
+  &--left{
+    margin-left: $space_l;
+    background: $non-color-white-0;
+
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: $space_m;
+      left: -$space_l*2;
+      border: $space_l solid transparent;
+      border-right: $space_l solid $non-color-white-0;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: $space_l + $space_s;
+      left: -$space_3l;
+      border: $space_m+$space_s solid transparent;
+      border-left: 0;
+      border-right: $space_3l solid #E2F7FB;
+    }
+  }
+}
+
+/*&--right {
+		width: calc(100% - #{$space_xxl} - #{$space_xl});
+		position: relative;
+		background-color: $background-color_message1;
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: $space_m;
+			left: -$space_xl;
+			border: $space_l solid transparent;
+			border-right: $space_l solid $background-color_message1;
+		}
+
+		&::after {
+			content: '';
+			position: absolute;
+			top: $space_m;
+			left: -$space_xl+1;
+			border: $space_l solid transparent;
+			border-right: $space_l solid $background-color_message1;
+		}
+	}
+
+	&--left {
+		width: calc(100% - #{$space_xxl} - #{$space_xl});
+		position: relative;
+		background-color: $background-color_message2;
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: $space_m;
+			right: -$space_xl;
+			border: $space_l solid transparent;
+			border-left: $space_l solid $background-color_message2;
+		}
+
+		&::after {
+			content: '';
+			position: absolute;
+			top: $space_m;
+			right: -$space_xl+1;
+			border: $space_l solid transparent;
+			border-left: $space_l solid $background-color_message2;
+		}
+	}
+  */

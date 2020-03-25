@@ -1,0 +1,53 @@
+/*大きさ*/
+.u-width-100{
+width: 100%;
+}
+.u-width-90{
+width: 90%;
+}
+.u-width-80{
+width: 80%;
+}
+.u-width-70{
+width: 70%;
+}
+.u-width-75{
+@include mq(){
+width: 75%;
+}
+}
+.u-width-60{
+width: 60%;
+}
+.u-width-50{
+width: 50%;
+}
+.u-width-55{
+width: 55%;//キャリー作成分
+}
+
+.u-width-45{
+width: 45%;
+}
+.u-width-40{
+width: 40%;
+}
+.u-width-35{
+width: 35%;//キャリー作成分
+}
+.u-width-20{
+width: 20%;
+}
+
+.u-width-85{
+width: 85%;
+}
+
+.u-width-30{
+@include mq(){
+width: 30%;
+}
+}
+.u-width-25{
+width: 25%;
+}

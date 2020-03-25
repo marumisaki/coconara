@@ -1,0 +1,44 @@
+.pagenate{
+	width: 90%;
+	margin: $space_l auto $space_4l auto;
+	padding: $space_xxl;
+	text-align: center;
+	border-radius: $space_m;
+	display: inline;
+	display: flex;
+	justify-content: center;
+	vertical-align: middle;
+	list-style: none;
+}
+.pagenation{
+  &__item{
+		width: 40px;
+		height: 40px;
+		background: $sub-color;
+		margin: 0 $space_l;
+	}
+	&__link{
+		display: block;
+		color: $non-color-white-0;
+		width: 100%;
+		height: 100%;
+		padding-top: 6px;
+	}
+	&__arrow{
+		&--left{
+			font-size: $font-size_xxl;
+			color: $main-color;
+			position: relative;
+			left: -400px;
+		}
+		&--right{
+			font-size: $font-size_xxl;
+			color: $main-color;
+			position: relative;
+			right: -400px;
+		}
+	}
+}
+.active{
+	background: $main-color;
+}

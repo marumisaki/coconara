@@ -1,0 +1,7 @@
+.footer {
+	background: $non-color-white-0;
+	font-size: $font-size_s;
+	&__link,&__copy{
+		margin: $space_l;
+	}
+}

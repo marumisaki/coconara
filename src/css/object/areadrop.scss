@@ -1,0 +1,56 @@
+.area-drop{
+  width:30%;
+	margin-top: $space_4l;
+	margin-right: $space_3l;
+  height: 100%;
+  background: #E2F7FB;
+  color: $non-color-gray;
+  text-align: center;
+  line-height: 300px;
+  position: relative;
+  box-sizing: border-box;
+  display: block;
+}
+.area-drop--default{
+	position: relative;
+	width: 100%;
+	height: 150px;
+	display: block;
+}
+
+.input-file--default{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+	opacity: 0;
+	top: 0;
+	left: 0;
+}
+
+.input-file{
+  opacity:0;
+  width:100%;
+  height:100%;
+	z-index:2;
+  position:absolute;
+  top:0;
+  left:0;
+}
+.prev-img--default{
+  width:100%;
+	height: 100%;
+  position:absolute;
+  top:0;
+  left:0;
+}
+
+.imgDrop-container{
+  width: 33.333%;
+  float: left;
+  padding-right: 15px;
+  box-sizing: border-box;
+}
+.counter-text{
+  text-align: right;
+}

@@ -1,0 +1,99 @@
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+ul,
+ol,
+dl,
+li,
+dt,
+dd,
+p,
+div,
+span,
+img,
+table,
+tr,
+th,
+td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-weight: normal;
+	font-size: 100%;
+	vertical-align: baseline;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	color: #404040;
+}
+
+article,
+header,
+footer,
+aside,
+figure,
+figcaption,
+nav,
+section,
+main,
+form{
+	display: block;
+}
+
+body {
+	line-height: 1.5;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	position: relative;
+	font-family: 'Noto Sans JP', sans-serif;
+	background: #F9FBFC;
+}
+
+ol,
+ul {
+	list-style: none;
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+	color: #404040;
+}
+
+a:hover {
+	cursor: pointer;
+	color: #4649DB;
+}
+
+button:hover{
+	cursor: pointer;
+}
+
+input[type='submit']:hover{
+	cursor: pointer;
+}
+
+img {
+	vertical-align: middle;
+	border-style: none;
+}
+
+select{
+	cursor: pointer;
+	outline: none;
+	text-indent: 0;
+	text-overflow: '';
+	background: none transparent;
+	box-shadow: none;
+	vertical-align: middle;
+	appearance: none;
+	-webkit-appearance: none;
+	border-radius: 0;
+}
+
+select::-ms-expand {
+    display: none;
+}

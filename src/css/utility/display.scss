@@ -1,0 +1,138 @@
+/*均等配置*/
+.u-flex-default {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.u-flex-between {
+    display: block;
+
+    @include mq() {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
+.u-flex-between--default{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.u-flex-around {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.u-flex-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.u-flex-column {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+}
+
+.u-flex {
+    @include mq() {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+}
+
+.u-flex-form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.u-flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.u-flex-vertical {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.u-flex-grow {
+    flex-grow: 1;
+}
+
+/*テーブル*/
+.u-table {
+    display: table;
+    width: 100%;
+}
+
+.u-tcell {
+    display: table-cell;
+}
+
+.u-block {
+    display: block;
+}
+
+/*インラインブロック*/
+.u-inline {
+    display: inline-block;
+}
+
+.u-toggle {
+    @extend .u-inline;
+
+    @include mq() {
+        display: block;
+    }
+}
+
+/*非表示*/
+.u-hidden {
+    display: none;
+}
+
+.js-hidden {
+    display: none;
+}
+
+.u-align-items {
+    align-items: flex-start;
+}
+
+.u-align-center {
+    align-items: center;
+}
+
+.u-align-end {
+    align-items: flex-end;
+}
+
+/*右寄せ*/
+.u-right {
+    text-align: right;
+}
+
+/*左寄せ*/
+.u-left {
+    text-align: left;
+}
+
+.u-position {
+    position: relative;
+}

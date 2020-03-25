@@ -1,0 +1,78 @@
+.text{
+	word-wrap: break-word;
+
+	&--s{
+		font-size: $font-size_s;
+	}
+	&--def{
+		font-size: $font-size_default;
+	}
+	&--l{
+		font-size: $font-size_l;
+	}
+	&--xl{
+		font-size: $font-size_xl;
+	}
+	&--xxl{
+		font-size: $font-size_xxl;
+	}
+	&--3l{
+		font-size: $font-size_3l;
+	}
+	&--4l{
+		font-size: $font-size_4l;
+	}
+	&--black{
+		color: $accent-color_default;
+	}
+	&--blue{
+		color: $accent-color_title;
+		&__under{
+			border-bottom: 1px solid $accent_color_title;
+			line-height: 2;
+		}
+	}
+	&--sky{
+		color: $accent_color_font;
+		&__under{
+			border-bottom: 1px solid $accent_color_font;
+			line-height: 2;
+		}
+	}
+	&--white{
+		color: $non-color-white-0;
+	}
+	&--red{
+		color: $accent-color_err;
+		&__under{
+			border-bottom: 1px solid $accent_color_err;
+			line-height: 2;
+		}
+	}
+	&--require{
+		background-color: $accent-color_err;
+		color: $non-color-white-0;
+		font-size: $font-size_s;
+		padding: 2px;
+	}
+	&-box{
+		height: $space_3l;
+		overflow: hidden;
+		position: relative;
+		&::before{
+			content: "　…";
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			background: #fefefe;
+		}
+
+		&::after{
+			content: "";
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			background: #fefefe;
+		}
+	}
+}

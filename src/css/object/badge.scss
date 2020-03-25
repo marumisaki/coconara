@@ -1,0 +1,12 @@
+/*ピクト*/
+.badge{
+	color: $non-color-white-0;
+	padding: 0 $space_s;
+	&-required{//必須
+		@extend .badge;
+		font-size: $font-size_s;
+		background: $accent-color_badge;
+		border-radius: 3px;
+		margin-left: $space_l;
+	}
+}

@@ -1,0 +1,47 @@
+.form-block {
+  position: relative;
+  font-size: 12px;
+  padding: 10px;
+  margin: 0 0 20px 0;
+  background: #fff;
+  border: 1px #ccc solid;
+  box-shadow: 0 2px 3px 0 #ddd;
+  -moz-box-shadow: 0 2px 3px 0 #ddd;
+  -webkit-box-shadow: 0 2px 3px 0 #ddd;
+}
+
+.form-block .close {
+    background-color: #aaa;
+    border-radius: 50%;
+    box-shadow: 1px 1px 1px #ddc inset;
+    color: #666;
+    display: inline-block;
+    font-size: 24px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    text-shadow: 1px 1px 0 #fff;
+    top: 4px;
+    position: absolute;
+    right: 4px;
+    width: 25px;
+    cursor: pointer;
+}
+
+.form-block .add {
+    position: absolute;
+    background-color: #ddd;
+    border-radius: 50%;
+    color: #fff;
+    display: inline-block;
+    font-size: 32px;
+    height: 20px;
+    width: 20px;
+    line-height: 15px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    cursor: pointer;
+}

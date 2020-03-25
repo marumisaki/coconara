@@ -1,0 +1,38 @@
+.table{
+  border-collapse: collapse;
+  width: 100%;
+  &--tr{
+    height: $space_xxl;
+    line-height: $space_xxl;
+  }
+  &--tr__border{
+    border-bottom: 1px #ECECEC solid;
+    height: $space_xxl;
+    line-height: $space_xxl;
+  }
+  &--th{
+    width: 40%;
+    text-align: right;
+    color: $accent_color_font;
+    padding-right: $space_l;
+  }
+}
+
+.table--noborder{
+  border-collapse: collapse;
+  width: 100%;
+  &--tr{
+    height: $space_xxl;
+    line-height: $space_xxl;
+  }
+  &--th{
+    width: 50%;
+    text-align: right;
+    color: $accent_color_font;
+    padding-right: $space_l;
+  }
+  &--block{
+    color: $accent_color_font;
+    display: block;
+  }
+}

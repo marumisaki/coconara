@@ -1,0 +1,57 @@
+/*フォーム*/
+.form {
+	box-sizing: border-box;
+	text-align: left;
+}
+.form-box{
+	width: 100%;
+	box-sizing: border-box;
+	height: $space_xxl;
+	padding-left: $space_l;
+	border: 1px solid $non-color-ligthgray;
+	background-color: $non-color-white-0;
+	&--half{
+		width: 50%;
+	}
+}
+
+.radio{
+	display: none;;
+}
+
+.radio-icon{
+	position: relative;
+}
+.radio-icon:before{
+	content: "\f0c8";
+	font-family: FontAwesome;
+	font-size: $font-size_default;
+}
+.radio:checked + .radio-icon:before{
+	content: "\f14a";
+	font-family: FontAwesome;
+	font-size: $font-size_default;
+}
+.accordion{
+	display: none;
+}
+.accordion-icon{
+	position: relative;
+}
+.accordion-icon:after{
+	content: "開く▼";
+	position: absolute;
+	right: 0;
+}
+.accordion-menu{
+	height: 0;
+	opacity: 0;
+	padding: 0;
+	overflow: hidden;
+	transition: all 1s;
+}
+
+.accordion:checked + .accordion-menu{
+	height: auto;
+	opacity: 1;
+}

@@ -1,0 +1,23 @@
+/*角丸め*/
+.u-radius__s{
+border-radius: $space_s;
+}
+.u-radius__m{
+border-radius: $space_m;
+}
+.u-radius__l{
+border-radius: $space_l;
+}
+/*線スタイル*/
+.bs-solid--sub{
+border: 1px solid $main-color;
+//box-shadow: 2px 2px 4px $non-color-gray;
+}
+.u-border--gray{
+border: 1px solid $non-color-ligthgray;
+}
+
+
+.u-border__bottom{
+border-bottom: 1px solid $non-color-white-1;
+}

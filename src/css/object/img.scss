@@ -1,0 +1,26 @@
+.img{
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+
+  &__small{
+    height: 200px;
+  }
+
+  &__middle{
+    height: 400px;
+  }
+}
+
+.img-fit{
+  object-fit: contain;
+  width: 100%;
+}
+
+.img-dm{
+    height: $space_l;
+    transform: translateX(-50%);
+    position: absolute;
+    left: 50%;
+    top: -$space_l;
+}

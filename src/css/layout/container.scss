@@ -1,0 +1,19 @@
+.container{
+    margin: 0 auto;
+    text-align: center;
+    width: 100vw;
+    
+    @include mq(){
+        width: $site-width;
+        padding: $space_m;
+    }
+}
+
+.l-container{
+	margin: 0 auto;
+    width: 100vw;
+
+    @include mq(){
+        width: $site-width;
+    }
+}

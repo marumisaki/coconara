@@ -1,0 +1,23 @@
+.title{
+  background-color: $main-color;
+  width: 100%;
+  text-align: center;
+  border-radius: $space_s;
+  &--main{
+    height: $space_3l*2;
+    line-height: $space_3l*2;
+    font-size: $font-size_3l;
+    font-weight: bold;;
+    color: $non-color-white-0;
+    box-shadow: 0 $space_s $space_s #ECECEC;
+  }
+  &--review{
+    height: $space_4l;
+    font-size: $font-size_xl;
+  }
+  &--sub{
+    color: $main-color;
+    font-size: $font-size_xl;
+
+  }
+}

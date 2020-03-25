@@ -1,0 +1,86 @@
+/*文字色*/
+.u-error{
+	color: $accent-color_err;
+}
+.u-white{
+	color: $non-color-white-0;
+}
+.u-blue{
+color: $accent-color_title;
+}
+.u-sub{
+color: accent-color_sub;
+}
+
+.u-lightblue{
+color: $accent_color_font;
+}
+
+/*文字の丸め*/
+.u-ellipsis__default{
+	overflow: hidden;
+	position: relative;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+/*折り返し*/
+.u-word{
+	word-break: break-all;
+}
+
+/*ライン高さ*/
+.u-lineheight{
+	line-height: 100%;
+}
+
+.u-lineheight-2{
+	line-height: 2;
+}
+
+/*background-color*/
+.bg-non-0{
+	background: $non-color-white-0;
+}
+.bg-lightblue{
+	background: $sub-color;
+}
+
+//薄い水色背景
+.bg-basecolor{
+    background: $base-color;
+}
+/*font-color*/
+.fc-link{
+	color: $accent-color_link;
+}
+
+.fc-non{
+	color: $non-color-white-0;
+}
+.fc-font{
+	color: $accent_color_font;
+}
+/*太字*/
+.fw-bold{
+	font-weight: bold;
+}
+.td-ul{
+	text-decoration: underline;
+}
+
+.has_error select, .has_error input, .has_error .err, .err {
+	color: red;
+	border-color: red;
+}
+
+.u-font-small{
+	font-size: $font-size_s;
+}
+
+.u-position{
+    position: relative;
+}
+.u-fl_r{
+    float: right;
+}

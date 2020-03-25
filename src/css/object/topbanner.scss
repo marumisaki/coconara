@@ -1,0 +1,22 @@
+.banner{
+  width: 100%;
+  background-color: rgba($sub-color, 0.3);
+  &--line{
+    height: 170px;
+    position: relative;
+  }
+  & .img{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 130px;
+    height: 130px;
+    border: 1px black solid;
+    transform: translate(-50%, 50%);
+  }
+  &--title{
+    padding: $space_m $space_xl;
+    text-align: center;
+
+  }
+}

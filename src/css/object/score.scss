@@ -1,0 +1,62 @@
+.star {
+  display: flex;
+  flex-direction: row-reverse;
+  height: $space_xxl;
+  line-height: $space_xxl;
+
+}
+
+.score{
+  position: relative;
+  display: inline-block;
+  width: 200px;
+  height: 20px;
+  font-size: 20px;
+  letter-spacing: 10px;
+}
+
+.score:before, .score:after{
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '★★★★★';
+  display: inline-block;
+  height: 20px;
+  line-height: 20px;
+}
+.score:before{
+  color: gray;
+}
+.score:after{
+  color: $accent-color_btn;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.score-0:after{
+width: 0px;
+}
+
+.score-1:after{
+width: 30px;
+}
+
+.score-2:after{
+width: 60px;
+}
+
+.score-3:after{
+width: 90px;
+}
+
+.score-4:after{
+width: 120px;
+}
+
+.score-5:after{
+width: 150px;
+}
+
+input[type='radio']:checked~label.score_star {
+  color: $accent-color_btn;
+}
